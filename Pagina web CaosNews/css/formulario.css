@@ -94,3 +94,10 @@ hr{
     cursor: pointer;
     background-color: rgba(133, 0, 51, 0.7);
 }
+
+#p-direccion{
+    color: black;
+    width: 400px;
+    height: 40px;
+    
+}

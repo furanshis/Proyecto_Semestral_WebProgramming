@@ -7,6 +7,8 @@
     <link rel="shortcut icon" href="img/imgcn.png" type="image/x-icon">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/formulario.css">
+    <script src="js/Copia de jquery-3.6.0.js"></script>
+    <script src="js/form.js"></script>
 </head>
 <body>
     <header id="cabecera">
@@ -48,7 +50,8 @@
             <hr>
             <div class="cont-datos">
                 <label for="direccion">Dirección*</label> <br>
-                <input class="datos" type="text" name="direccion">
+                <input id="direccion" class="datos" type="text" name="direccion"  onfocusout="largo()">
+                <p id="p-direccion"></p>
             </div>
             <div class="cont-datos">
                 <label for="comuna">Comuna*</label>
