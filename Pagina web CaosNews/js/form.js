@@ -49,8 +49,9 @@ $(document).ready(
             }else{
                 $('#p-email').html('')
             }
-            
-
+        });
+        $("#motivo").click(function(){
+            if ($(""))
         });
     }
 )
