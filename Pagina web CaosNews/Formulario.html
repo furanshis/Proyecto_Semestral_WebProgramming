@@ -7,6 +7,8 @@
     <link rel="shortcut icon" href="img/imgcn.png" type="image/x-icon">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/formulario.css">
+    <script src="js/Copia de jquery-3.6.0.js"></script>
+    <script src="js/form.js"></script>
 </head>
 <body>
     <header id="cabecera">
@@ -26,7 +28,7 @@
                 style="height: 100%; width: 500%;">
                 
             </svg></div>
-    </header >
+    </header>
    <main>
        
        <form id="form-motivo">
@@ -48,48 +50,62 @@
             <hr>
             <div class="cont-datos">
                 <label for="direccion">Dirección*</label> <br>
-                <input class="datos" type="text" name="direccion">
+                <input id="direccion" class="datos" type="text" name="direccion">
+                <p class="p-form" id="p-direccion"></p>
             </div>
             <div class="cont-datos">
                 <label for="comuna">Comuna*</label>
                 <br>
-                <input class="datos" type="text" name="comuna">
+                <input class="datos" type="text" name="comuna" id="comuna">
+                <p class="p-form" id="p-comuna"></p>
             </div>
             <div class="cont-datos">
                 <label for="nombre">Primer Nombre*</label>
                 <br>
-                <input type="text" name="nombre" class="datos">
+                <input type="text" name="nombre" class="datos" id="nombre">
+                <p class="p-form" id="p-nombre"></p>
 
             </div>
             <div class="cont-datos">
-                <label for="snombre">Segundo Nombre*</label>
+                <label for="snombre">Segundo Nombre</label>
                 <br>
                 <input type="text" name="snombre" class="datos">
+                <p class="p-form"></p>
                 
             </div>
             <div class="cont-datos">
                 <label for="app">Apellido Paterno*</label>
                 <br>
-                <input type="text" name="app" class="datos">
+                <input type="text" name="app" class="datos" id="app">
+                <p class="p-form" id="p-app"></p>
                 
             </div>
             <div class="cont-datos">
                 <label for="apm">Apellido Materno*</label>
                 <br>
-                <input type="text" name="apm" class="datos">
+                <input type="text" name="apm" class="datos" id="apm">
+                <p class="p-form" id="p-apm"></p>
                 
             </div>
             <div class="cont-datos">
                 <label for="email">Correo Electrónico*</label>
                 <br>
-                <input type="text" name="email" class="datos">
+                <input type="email" name="email" class="datos" id="email">
+                <p class="p-form" id="p-email"></p>
         
             </div>
             <div class="cont-datos">
-                <label for="telefono">Nº de Telefono*</label>
+                <label for="telefono">Nº de Telefono</label>
                 <br>
                 <input type="text" name="telefono" class="datos">
+                <p class="p-form"></p>
                 
+            </div>
+
+            <div class="cont-datos">
+                <h4>Comentario*</h4> 
+                <br>
+                <textarea name="" id="" cols="109" rows="20"></textarea>
             </div>
         </fieldset>
 
