@@ -57,6 +57,7 @@ $(document).ready(
                 console.log("si")
             }else{
                 $("#reembolso").css("display", "none")
+                $("#boleta").val('')
                 console.log("no")
             }
         });
