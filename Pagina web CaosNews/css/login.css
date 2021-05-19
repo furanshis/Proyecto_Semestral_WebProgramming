@@ -1,0 +1,22 @@
+#cabecera{
+    height: 150px;
+    background:hsla(340, 95%, 50%, 0.2);
+}
+
+fieldset{
+    border: none;
+}
+
+#login{
+    margin-left: 100px;
+    width: 350px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.input{
+    width: 200px;
+    height: 20px;
+}
