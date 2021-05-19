@@ -34,7 +34,7 @@
     </header>
    <main>
        
-       <form id="form-motivo">
+       <form id="form-motivo" method="POST">
         <fieldset>
            <h4 class="titulo-motivo">Motivo de consulta</h2>
             <hr>
@@ -42,16 +42,19 @@
             <br>
             <select name="motivo" id="motivo">
                 <option value="1">Modificación de datos personales</option>
-                <option value="2">Reenbolso</option>
+                <option value="2">Reembolso</option>
                 <option value="3">Contactar por una noticia</option>
                 <option value="4">Informacion de Contrato</option>
             </select>
         </fieldset>
         <br>
-        <fieldset>
-            <h4 class="titulo-motivo">Reenbolso</h4>
+        <fieldset id="reembolso">
+            <h4 class="titulo-motivo">Reembolso</h4>
             <hr>
-
+            <div id="div-boleta">
+            <label for="boleta">Ingrese última boleta de pago: </label>
+            <input type="file" name="boleta" id="boleta">
+            </div>
         </fieldset>
         <br>
         <fieldset>

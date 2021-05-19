@@ -50,8 +50,15 @@ $(document).ready(
                 $('#p-email').html('')
             }
         });
-        $("#motivo").click(function(){
-            if ($(""))
+        $("#motivo").change(function(){
+            
+            if ($("#motivo").val() == 2){
+                $("#reembolso").css("display", "inline")
+                console.log("si")
+            }else{
+                $("#reembolso").css("display", "none")
+                console.log("no")
+            }
         });
     }
 )

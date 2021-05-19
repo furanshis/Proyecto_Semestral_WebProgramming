@@ -84,6 +84,7 @@ hr{
     font-size: 1rem;
     color: red;
     margin-top: 5px;
+    font-family: sans-serif;
     
     
 }
@@ -110,3 +111,14 @@ hr{
     background-color: rgba(133, 0, 51, 0.7);
 }
 
+#reembolso{
+    display: none;
+}
+
+#div-boleta{
+    margin-bottom: 30px;
+}
+#boleta{
+    height: 20px;
+    
+}
