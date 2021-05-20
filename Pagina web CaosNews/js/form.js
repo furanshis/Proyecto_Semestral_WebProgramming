@@ -7,7 +7,7 @@ $(document).ready(
                 $("#comuna").css("border-color", "red");
                 event.preventDefault()
             }else{
-                $('#p-comuna').html("*")
+                $('#p-comuna').html("")
             }
 
             if($('#direccion').val().length == 0){
