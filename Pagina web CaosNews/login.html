@@ -12,7 +12,7 @@
 
     <script src="js/Copia de jquery-3.6.0.js"></script>
 
-    <script src="js/form.js"></script>
+    <script src="js/login.js"></script>
 </head>
 <body>
     <header id="cabecera">
@@ -24,7 +24,6 @@
             <a href="#">iniciar seccion</a>
         </nav>
         <section class="textos-header">
-            <i id="icon-user" class="fas fa-user"></i>
             <h1 id="titulo">Ingresar a Caos News©</h1>
                
            
@@ -35,21 +34,33 @@
             </svg></div>
     </header>
    <main>
-       <form action="" method="POST">
+       <form id="form-login" action="" method="POST">
            <fieldset id="login">
-               <h4 id="titulo-login">Ingrese Datos</h4>
+            
+               <h4 class="titulo-login"><i id="icon-user" class="fas fa-user"></i> Ingrese Datos</h4>
                <div class="div-datos">
                <label for="user">Ingrese Usuario:</label>
                <input type="text" name="user" id="user" class="datos">
+               <p class="p-form" id="p-user"></p>
                 </div>
                 <div class="div-datos">
                <label for="password">Ingrese contraseña:</label>
                <input type="text" name="password" id="password" class="datos">
-                </div>
-                
+               <p class="p-form" id="p-password"></p>
+                </div>    
            </fieldset>
            <button type="submit" id="boton">Ingresar</button>
        </form>
+       <div id="p-2">
+           <a class="a-p" href=""><p>¿Olvidó su contraseña?</p></a> <br> 
+           <a class="a-p" href=""><p>¿Olvidó nombre de usuario?</p></a>
+       </div>
+       <hr>
+       <br>
+       <div>
+        <p id="titulo-no" class="titulo-login">¿Aún no tiene cuenta?</p>
+        <button id="boton-registro" type="button">Registrarme</button>
+       </div>
        
        
    </main>
