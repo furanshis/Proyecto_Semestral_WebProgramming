@@ -644,3 +644,8 @@ h2{
     height: 50px;
 
 }
+#grafico{
+    width: 900px;
+    height: 500px;
+    margin-right: 10px;
+}
