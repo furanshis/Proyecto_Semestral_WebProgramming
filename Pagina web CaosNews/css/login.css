@@ -1,22 +1,51 @@
-#cabecera{
-    height: 150px;
-    background:hsla(340, 95%, 50%, 0.2);
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
 fieldset{
     border: none;
 }
-
-#login{
-    margin-left: 100px;
-    width: 350px;
-    height: 600px;
-    background-color: rgba(0, 0, 0, 0.1);
-    margin-bottom: 40px;
-    margin-top: 40px;
+#cabecera{
+    height: 450px;
+    background: hsla(340, 95%, 50%, 0.459)
 }
 
-.input{
-    width: 200px;
-    height: 20px;
+#titulo{
+    font-family: 'Lobster Two';
+    font-size: 6rem;
+}
+
+#titulo-login{
+    font-size: 2rem;
+    margin-left: 400px;
+}
+
+.datos{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 5px;
+    border: 1px solid #dfdfdf;
+    border-radius: 2px;
+    margin-right: 2rem;
+    padding: 1rem;
+    padding-right: 2rem;
+    width: 400px;
+    font-size: 1rem;
+    margin-top: 10px;
+    
+}
+
+#login{
+    margin-left: 200px;
+    top: 50%;
+    left: 50%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.div-datos{
+    margin-top: 20px;
+    float: left;
+    margin-bottom: 30px;
+    margin-right: 20px;
 }

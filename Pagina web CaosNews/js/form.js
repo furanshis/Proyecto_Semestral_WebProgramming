@@ -49,6 +49,13 @@ $(document).ready(
             }else{
                 $('#p-email').html('')
             }
+            if($("#comentario").val().length == 0){
+                $('#p-comentario').html("*Este campo no debe estar vacío")
+                $("#comentario").css("border-color", "red");
+                event.preventDefault()
+            }else{
+                $('#p-comentario').html('')
+            }
         });
         $("#motivo").change(function(){
             
