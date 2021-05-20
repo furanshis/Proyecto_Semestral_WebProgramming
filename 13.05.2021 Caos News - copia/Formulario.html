@@ -7,7 +7,10 @@
     <link rel="shortcut icon" href="img/imgcn.png" type="image/x-icon">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/formulario.css">
+    
+
     <script src="js/Copia de jquery-3.6.0.js"></script>
+
     <script src="js/form.js"></script>
 </head>
 <body>
@@ -17,7 +20,7 @@
             <a href="#">Ultimo minuto</a>
             <a href="#">Dato util</a>
             <a href="#">Programas</a>
-            <a href="#">iniciar sesion</a>
+            <a href="#">iniciar seccion</a>
         </nav>
         <section class="textos-header">
             <h1 id="titulo">Contacto</h1>
@@ -31,7 +34,7 @@
     </header>
    <main>
        
-       <form id="form-motivo">
+       <form id="form-motivo" method="POST">
         <fieldset>
            <h4 class="titulo-motivo">Motivo de consulta</h2>
             <hr>
@@ -39,10 +42,19 @@
             <br>
             <select name="motivo" id="motivo">
                 <option value="1">Modificación de datos personales</option>
-                <option value="2">Reenbolso</option>
+                <option value="2">Reembolso</option>
                 <option value="3">Contactar por una noticia</option>
                 <option value="4">Informacion de Contrato</option>
             </select>
+        </fieldset>
+        <br>
+        <fieldset id="reembolso">
+            <h4 class="titulo-motivo">Reembolso</h4>
+            <hr>
+            <div id="div-boleta">
+            <label for="boleta">Ingrese última boleta de pago: </label>
+            <input type="file" name="boleta" id="boleta">
+            </div>
         </fieldset>
         <br>
         <fieldset>
