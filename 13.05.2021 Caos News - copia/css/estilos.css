@@ -512,8 +512,264 @@ h2{
     from{
         transform: rotateY(0deg);
     }to{
-        transform: rotateY(360deg);
+        transform: rotateY(500deg);
     }
 }
+.boton {
+    border: 1px solid #2e518b; /*anchura, estilo y color borde*/
+    padding: 10px; /*espacio alrededor texto*/
+    background-color: #2e518b; /*color botón*/
+    color: #ffffff; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+    font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+    border-radius: 50px; /*bordes redondos*/
+    }
 
+    @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
 
+    #cabecera{
+        height: 450px;
+        background: hsla(340, 95%, 50%, 0.459)
+    }
+    
+    #titulo{
+        font-family: 'Lobster Two';
+        font-size: 6rem;
+    }
+    
+    #form-motivo{
+        font-size: 1.3rem;
+        /*background-color: black;*/
+        margin-left: 300px;
+        margin-top: 30px;
+    
+    }
+    fieldset{
+        border: none;
+    }
+    #motivo{
+        -webkit-appearance: none;
+      -moz-appearance: none;
+      background: transparent;
+      background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+      background-repeat: no-repeat;
+      background-position-x: 100%;
+      background-position-y: 5px;
+      border: 1px solid #dfdfdf;
+      border-radius: 2px;
+      margin-right: 2rem;
+      padding: 1rem;
+      padding-right: 2rem;
+      width: 400px;
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+    
+    
+    .titulo-motivo{
+        font-size: 2rem;
+        
+    }
+    
+    hr{
+        width: 900px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        
+    }
+    
+    .datos{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background: transparent;
+        background-repeat: no-repeat;
+        background-position-x: 100%;
+        background-position-y: 5px;
+        border: 1px solid #dfdfdf;
+        border-radius: 2px;
+        margin-right: 2rem;
+        padding: 1rem;
+        padding-right: 2rem;
+        width: 400px;
+        font-size: 1rem;
+        margin-top: 10px;
+        
+    }
+    
+    .cont-datos{
+        margin-top: 20px;
+        float: left;
+        margin-bottom: 30px;
+        margin-right: 20px;
+        
+        
+    }
+    
+    .p-form{
+        position: absolute;
+        width: 400px;
+        font-size: 1rem;
+        color: red;
+        margin-top: 5px;
+        
+        
+    }
+    
+    
+    #pie{
+        margin-top: 20px;
+    }
+    
+    #submit{
+        margin-top: 20px;
+        margin-left: 733px;
+        width: 100px;
+        height: 50px;
+        border-radius: 10px;
+        background-color: #840032;
+        border:none;
+        color: white;
+        font-size: 15px;
+    }
+    
+    #submit:hover{
+        cursor: pointer;
+        background-color: rgba(133, 0, 51, 0.7);
+    }
+.cont{
+
+    background-position: right;
+    width: 150px;
+    height: 50px;
+
+}
+#grafico{
+    width: 900px;
+    height: 500px;
+    margin-right: 10px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+fieldset{
+    border: none;
+}
+#cabecera{
+    height: 450px;
+    background: hsla(340, 95%, 50%, 0.459)
+}
+
+.p-form{
+    position: absolute;
+    width: 400px;
+    font-size: 1rem;
+    color: red;
+    margin-top: 5px;
+    font-family: sans-serif;
+    
+}
+
+#titulo{
+    font-family: 'Lobster Two';
+    font-size: 4.5rem;
+}
+
+.titulo-login{
+    font-size: 2rem;
+    margin-left: 400px;
+}
+
+.datos{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 5px;
+    border: 1px solid #dfdfdf;
+    border-radius: 2px;
+    margin-right: 2rem;
+    padding: 1rem;
+    padding-right: 2rem;
+    width: 400px;
+    font-size: 1rem;
+    margin-top: 10px;
+    
+}
+
+#login{
+    margin-left: 200px;
+    top: 50%;
+    left: 50%;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+label{
+   display: block;
+}
+.div-datos{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 320px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    
+}
+
+#boton{
+    margin-top: 1px;
+    margin-left: 520px;
+    margin-bottom: 20px;
+    width: 400px;
+    height: 50px;
+    background-color: #840032;
+    border:none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#boton:hover{
+    background-color: rgb(0, 0, 0);
+    
+}
+
+#p-2{
+    margin-left: 520px;
+}
+.a-p{
+    text-decoration: none;
+    
+}
+
+hr{
+    width: 500px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 460px;
+    opacity: 20%;
+    
+}
+
+#titulo-no{
+    margin-left: 520px;
+    font-size: 1.4rem;
+    
+
+}
+
+#boton-registro{
+    margin-top: 10px;
+    margin-left: 520px;
+    margin-bottom: 20px;
+    width: 400px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+#boton-registro:hover{
+    color: white;
+    background-color: #000000;
+}

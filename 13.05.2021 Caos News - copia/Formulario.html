@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="shortcut icon" href="img/imgcn.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    
+
+    <script src="js/Copia de jquery-3.6.0.js"></script>
+
+    <script src="js/form.js"></script>
+</head>
+<body>
+    <header id="cabecera">
+        <nav>
+            <a href="index.html">Portada</a>
+            <a href="Nacional.html">Ultimo minuto</a>
+            <a href="deportes.html">Deporte</a>
+            <a href="reportajes.html">Programas</a>
+            <a href="login.html">iniciar sesion</a>
+        </nav>
+        <section class="textos-header">
+            <h1 id="titulo">Contacto</h1>
+               
+           
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 500%;">
+                
+            </svg></div>
+    </header>
+   <main>
+       
+       <form id="form-motivo" method="POST">
+        <fieldset>
+           <h4 class="titulo-motivo">Motivo de consulta</h2>
+            <hr>
+            <label for="motivo" id="label-motivo">Motivo*</label>
+            <br>
+            <select name="motivo" id="motivo">
+                <option value="1">Modificación de datos personales</option>
+                <option value="2">Reembolso</option>
+                <option value="3">Contactar por una noticia</option>
+                <option value="4">Informacion de Contrato</option>
+            </select>
+        </fieldset>
+        <br>
+        <fieldset id="reembolso">
+            <h4 class="titulo-motivo">Reembolso</h4>
+            <hr>
+            <div id="div-boleta">
+            <label for="boleta">Ingrese última boleta de pago: </label>
+            <input type="file" name="boleta" id="boleta">
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <h4 class="titulo-motivo">Ingrese los siguientes datos para el envio de su solicitud</h4>
+            <hr>
+            <div class="cont-datos">
+                <label for="direccion">Dirección*</label> <br>
+                <input id="direccion" class="datos" type="text" name="direccion">
+                <p class="p-form" id="p-direccion"></p>
+            </div>
+            <div class="cont-datos">
+                <label for="comuna">Comuna*</label>
+                <br>
+                <input class="datos" type="text" name="comuna" id="comuna">
+                <p class="p-form" id="p-comuna"></p>
+            </div>
+            <div class="cont-datos">
+                <label for="nombre">Primer Nombre*</label>
+                <br>
+                <input type="text" name="nombre" class="datos" id="nombre">
+                <p class="p-form" id="p-nombre"></p>
+
+            </div>
+            <div class="cont-datos">
+                <label for="snombre">Segundo Nombre</label>
+                <br>
+                <input type="text" name="snombre" class="datos">
+                <p class="p-form"></p>
+                
+            </div>
+            <div class="cont-datos">
+                <label for="app">Apellido Paterno*</label>
+                <br>
+                <input type="text" name="app" class="datos" id="app">
+                <p class="p-form" id="p-app"></p>
+                
+            </div>
+            <div class="cont-datos">
+                <label for="apm">Apellido Materno*</label>
+                <br>
+                <input type="text" name="apm" class="datos" id="apm">
+                <p class="p-form" id="p-apm"></p>
+                
+            </div>
+            <div class="cont-datos">
+                <label for="email">Correo Electrónico*</label>
+                <br>
+                <input type="email" name="email" class="datos" id="email">
+                <p class="p-form" id="p-email"></p>
+        
+            </div>
+            <div class="cont-datos">
+                <label for="telefono">Nº de Telefono</label>
+                <br>
+                <input type="text" name="telefono" class="datos">
+                <p class="p-form"></p>
+                
+            </div>
+
+            <div class="cont-datos">
+                <h4>Comentario*</h4> 
+                <br>
+                <textarea name="" id="" cols="109" rows="20"></textarea>
+            </div>
+        </fieldset>
+
+        <button type="submit" id="submit">Enviar</button>
+            
+
+       </form>
+   </main>
+
+
+   <footer id="pie">
+    <div class="contenedor-footer">
+        <div class="content-foo">
+            <h4>Noticias</h4>
+            <p>Nacional</p>
+            <p>Internacional</p>
+            <p>Tendencias</p>
+            <p>Deportes</p>
+            <p>Economia</p>
+            <p>Salud</p>
+        </div>
+        <div class="content-foo">
+            <h4>Datos util</h4>
+            <p>Estudiante</p>
+            <p>Pensiones</p>
+            <p>Bonos</p>
+            <p>Mujer</p>
+            
+        </div>
+
+    <div class="content-foo">
+        <h4>Programas</h4>
+        <p>Noticieros</p>
+        <p>Reportaje</p>
+        <p>Entrevistas</p>
+        
+        
+    </div>
+        <div class="content-foo">
+            <h4>Contactenos</h4>
+            <p>Fono: (56) 960575948</p>
+            <p>Email:example@example.com</p>
+            <p>Ubicacion: Avenida Vicuña Mackenna #1370, Ñuñoa, Santiago Chile </p>
+        
+
+
+        </div>
+    </div>
+    <h2 class="titulo-final">&copy; Caos News | Noticiero Nacional</h2>
+</footer>
+    
+</body>
+</html>
