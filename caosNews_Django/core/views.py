@@ -33,3 +33,6 @@ def salud(request):
 
 def tendencias(request):
     return render(request, 'core/tendencias.html')
+
+def entrevistas(request):
+    return render(request, 'core/entrevistas.html')

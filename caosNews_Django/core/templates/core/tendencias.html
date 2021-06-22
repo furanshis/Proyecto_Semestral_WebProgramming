@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 
@@ -7,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tendencias web Caos_News</title>
     <link rel="shortcut icon" href="img/imgcn.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="{% static 'core/css/estilos.css'%}">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
 </head>
 
@@ -20,11 +21,11 @@
                 </div>
             </div>
             
-            <a href="index.html">Portada</a>
-            <a href="#">Ultimo minuto</a>
-            <a href="economia.html">Dato util</a>
-            <a href="#">Programas</a>
-            <a href="#">iniciar sesion</a>
+            <a href="{% url 'index' %}">Portada</a>
+            <a href="{% url 'nacional' %}">Ultimo minuto</a>
+            <a href="{% url 'deportes' %}">Deporte</a>
+            <a href="{% url 'Reportajes' %}">Programas</a>
+            <a href="{% url 'login' %}">iniciar sesion</a>
         </nav>
         <section class="textos-header">
             <h1>Tendencias</h1>
@@ -204,7 +205,7 @@
                 <h2 class="titulo">Equipo de trabajo</h2>
                 <div class="cards">
                     <div class="card">
-                        <img src="tendenciaimg/img4" alt="">
+                        <img src="{% static 'core/tendenciaimg/img4'%}" alt="">
                         <div class="contenido-texto-card">
                             <h4>Constanza Soto</h4>
                             <p>Funcion: Periodista </p>
@@ -212,7 +213,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img src="tendenciaimg/img5.jpg" alt="">
+                        <img src="{% static 'core/tendenciaimg/img5.jpg' %}" alt="">
                         <div class="contenido-texto-card">
                             <h4>Paolo Valencia</h4>
                             <p>Funcion: Camarografo</p>
@@ -224,7 +225,7 @@
             <section class="clientes contenedor">
                 <div class="cards">
                     <div class="card">
-                        <img src="tendenciaimg/img3.jpg" alt="">
+                        <img src="{% static 'core/tendenciaimg/img3.jpg'%}" alt="">
                         <div class="contenido-texto-card">
                             <h4>Francisco Santander</h4>
                             <p>Funcion: Periodista </p>
@@ -237,27 +238,27 @@
             <div class="contenedor-footer">
                 <div class="content-foo">
                     <h4>Noticias</h4>
-                    <a href="Nacional.html"><p>Nacional</p></a>
-                    <a href="Internacional.html"><p>Internacional</p></a>
-                    <a href="tendencias.html"><p>Tendencias</p></a>
-                    <a href="deportes.html"><p>Deportes</p></a>
-                    <a href="economia.html"><p>Economia</p></a>
-                    <a href="salud.html"><p>Salud</p></a>
+                    <a href="{% url 'nacional' %}"><p>Nacional</p></a>
+                    <a href="{% url 'internacional' %}"><p>Internacional</p></a>
+                    <a href="{% url 'tendencias' %}"><p>Tendencias</p></a>
+                    <a href="{% url 'deportes' %}"><p>Deportes</p></a>
+                    <a href="#"><p>Economia</p></a>
+                    <a href="{% url 'Salud' %}"><p>Salud</p></a>
                 </div>
                 <div class="content-foo">
                     <h4>Datos util</h4>
-                    <a href="datosutil.html"><p>Estudiante</p></a>
-                    <a href="datosutil.html"><p>Pensiones</p></a>
-                    <a href="datosutil.html"><p>Bonos</p></a>
-                    <a href="datosutil.html"><p>Mujer</p></a>
+                    <a href="{% url 'datosSutil' %}"><p>Estudiante</p></a>
+                    <a href="{% url 'datosSutil' %}"><p>Pensiones</p></a>
+                    <a href="{% url 'datosSutil' %}"><p>Bonos</p></a>
+                    <a href="{% url 'datosSutil' %}"><p>Mujer</p></a>
                     
                 </div>
     
             <div class="content-foo">
                 <h4>Programas</h4>
-                <a href="tendencias.html"><p>Noticieros</p></a>
-                <a href="reportajes.html"><p>Reportaje</p></a>
-                <a href="entrevistas.html"><p>Entrevistas</p></a>
+                <a href="{% url 'internacional' %}"><p>Noticieros</p></a>
+                <a href="{% url 'Reportajes' %}"><p>Reportaje</p></a>
+                <a href="{% url 'entrevistas' %}"><p>Entrevistas</p></a>
                 
                 
             </div>

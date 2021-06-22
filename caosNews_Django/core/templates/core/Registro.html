@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 
@@ -7,21 +8,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sign up</title>
     <link rel="shortcut icon" href="img/imgcn.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/Sign_up.css">
+    <link rel="stylesheet" href="{% static 'core/css/estilos.css'%}">
+    <link rel="stylesheet" href="{% static 'core/css/Sign_up.css'%}">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
-    <script src="js/Copia de jquery-3.6.0.js"></script> 
-    <script src="js/script.js"></script>
+    <script src="{% static 'core/js/Copia de jquery-3.6.0.js'%}"></script> 
+    <script src="{% static 'core/js/script.js'%}"></script>
 </head>
 
 <body>
     <header id="cabecera">
         <nav>
-          <a href="index.html">Portada</a>
-          <a href="Nacional.html">Ultimo minuto</a>
-          <a href="deportes.html">Deporte</a>
-          <a href="reportajes.html">Programas</a>
-          <a href="login.html">iniciar sesion</a>
+          <a href="{% url 'index' %}">Portada</a>
+            <a href="{% url 'nacional' %}">Ultimo minuto</a>
+            <a href="{% url 'deportes' %}">Deporte</a>
+            <a href="{% url 'Reportajes' %}">Programas</a>
+            <a href="{% url 'login' %}">iniciar sesion</a>
         </nav>
 
     </header>
@@ -30,7 +31,7 @@
       
             <ul class="tab-group">
               <li class="tab active"><a href="#">Crear cuenta</a></li>
-              <li class="tab"><a href="login.html">Log In</a></li>
+              <li class="tab"><a href="{% url 'login' %}">Log In</a></li>
             </ul>
             
             <div class="tab-content">
@@ -107,45 +108,79 @@
       </div> <!-- /form -->
     </main>
     <footer>
-        <div class="contenedor-footer">
-            <div class="content-foo">
-                <h4>Noticias</h4>
-                <p>Nacional</p>
-                <p>Internacional</p>
-                <p>Tendencias</p>
-                <p>Deportes</p>
-                <p>Economia</p>
-                <p>Salud</p>
-            </div>
-            <div class="content-foo">
-                <h4>Datos util</h4>
-                <p>Estudiante</p>
-                <p>Pensiones</p>
-                <p>Bonos</p>
-                <p>Mujer</p>
-                
-            </div>
+      <section class="clientes contenedor">
+          <h2 class="titulo">Equipo de trabajo</h2>
+          <div class="cards">
+              <div class="card">
+                  <img src="{% static 'core/tendenciaimg/img4'%}" alt="">
+                  <div class="contenido-texto-card">
+                      <h4>Constanza Soto</h4>
+                      <p>Funcion: Periodista </p>
+                      <p>email: conzsto05@caosnew.cl</p>
+                  </div>
+              </div>
+              <div class="card">
+                  <img src="{% static 'core/tendenciaimg/img5.jpg' %}" alt="">
+                  <div class="contenido-texto-card">
+                      <h4>Paolo Valencia</h4>
+                      <p>Funcion: Camarografo</p>
+                      <p>email: paolvl09@caosnew.cl</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class="clientes contenedor">
+          <div class="cards">
+              <div class="card">
+                  <img src="{% static 'core/tendenciaimg/img3.jpg'%}" alt="">
+                  <div class="contenido-texto-card">
+                      <h4>Francisco Santander</h4>
+                      <p>Funcion: Periodista </p>
+                      <p>email: franc02@caosnew.cl</p>
+                  </div>
+              </div>
+      </section>
+      </section>
 
-        <div class="content-foo">
-            <h4>Programas</h4>
-            <p>Noticieros</p>
-            <p>Reportaje</p>
-            <p>Entrevistas</p>
-            
-            
-        </div>
-            <div class="content-foo">
-                <h4>Contactenos</h4>
-                <p>Fono: (56) 960575948</p>
-                <p>Email:example@example.com</p>
-                <p>Ubicacion: Avenida Vicuña Mackenna #1370, Ñuñoa, Santiago Chile </p>
-            
-    
-                
-            </div>
-        </div>
-        <h2 class="titulo-final">&copy; Caos News | Noticiero Nacional</h2>
-    </footer>
+      <div class="contenedor-footer">
+          <div class="content-foo">
+              <h4>Noticias</h4>
+              <a href="{% url 'nacional' %}"><p>Nacional</p></a>
+              <a href="{% url 'internacional' %}"><p>Internacional</p></a>
+              <a href="{% url 'tendencias' %}"><p>Tendencias</p></a>
+              <a href="{% url 'deportes' %}"><p>Deportes</p></a>
+              <a href="#"><p>Economia</p></a>
+              <a href="{% url 'Salud' %}"><p>Salud</p></a>
+          </div>
+          <div class="content-foo">
+              <h4>Datos util</h4>
+              <a href="{% url 'datosSutil' %}"><p>Estudiante</p></a>
+              <a href="{% url 'datosSutil' %}"><p>Pensiones</p></a>
+              <a href="{% url 'datosSutil' %}"><p>Bonos</p></a>
+              <a href="{% url 'datosSutil' %}"><p>Mujer</p></a>
+              
+          </div>
+
+      <div class="content-foo">
+          <h4>Programas</h4>
+          <a href="{% url 'internacional' %}"><p>Noticieros</p></a>
+          <a href="{% url 'Reportajes' %}"><p>Reportaje</p></a>
+          <a href="{% url 'entrevistas' %}"><p>Entrevistas</p></a>
+          
+          
+      </div>
+          <div class="content-foo">
+              <h4>Contactenos</h4>
+              <p>Fono: (56) 960575948</p>
+              <p>Email:example@example.com</p>
+              <p>Ubicacion: Avenida Vicuña Mackenna #1370, Ñuñoa, Santiago Chile </p>
+          
+  
+              
+          </div>
+      </div>
+      <h2 class="titulo-final">&copy; Caos News | Noticiero Nacional</h2>
+  </footer>
 </body>
 
 </html>

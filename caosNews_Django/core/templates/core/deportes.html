@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 
@@ -7,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Deportes Caos_News</title>
     <link rel="shortcut icon" href="img/imgcn.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="{% static 'core/css/estilos.css'%}">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
 </head>
 
@@ -16,17 +17,17 @@
         <nav>
             <div class="cont">
                 <div class="logo">
-                    <img src="tendenciaimg/logo.png" alt=""style="width:149px">
+                    <img src="{% static 'core/tendenciaimg/logo.png'%}" alt=""style="width:149px">
                 </div>
             </div>
-            <a href="index.html">Portada</a>
-            <a href="Nacional.html">Ultimo minuto</a>
-            <a href="deportes.html">Deporte</a>
-            <a href="reportajes.html">Programas</a>
-            <a href="login.html">iniciar sesion</a>
+            <a href="{% url 'index' %}">Portada</a>
+            <a href="{% url 'nacional' %}">Ultimo minuto</a>
+            <a href="{% url 'deportes' %}">Deporte</a>
+            <a href="{% url 'Reportajes' %}">Programas</a>
+            <a href="{% url 'login' %}">iniciar sesion</a>
         </nav>
         <section class="textos-header">
-            <img src="img3/deporte.png" alt=""style="width:500px">
+            <img src="{% static 'core/img3/deporte.png' %}" alt=""style="width:500px">
             <div class="content-all">
                 <div class="content-carrousel">
                     
@@ -45,7 +46,7 @@
         <section class="contenedor sobre-nosotros">
             
             <div class="contenedor-sobre-nosotros">
-                <img src="img3/img1.jpg"alt="">
+                <img src="{% static 'core/img3/img1.jpg'%}"alt="">
                 <div class="contenido-textos">
                     <h3><span>1</span>Real Madrid y Barcelona encabezan la lista: Grandes clubes europeos anuncian una "Superliga"</h3>
                     <p>Grandes clubes europeos de fútbol oficializaron el lanzamiento de una "Superliga", competición privada 
@@ -63,21 +64,21 @@
                 
                 <div class="servicio-cont">
                     <div class="servicio-ind">
-                        <img src="tendenciaimg/img13.jpg" alt="">
+                        <img src="{% static 'core/tendenciaimg/img13.jpg'%}" alt="">
                         <h3>Calendario Copa América Argentina - Colombia 2021</h3>
                         <p>Revisa el calendario completo de la Copa América que se disputará por primera vez en la historia en dos países: 
                             Argentina y Colombia. El torneo arranca en Buenos Aires con el partido entre Argentina y Chile.</p>
                             <a href="https://www.meganoticias.cl/deportes/337203-calendario-copa-america-argentina-colombia-2021-fixture-en-vivo.html" >>>Para más informacion<<</a>
                     </div>
                     <div class="servicio-ind">
-                        <img src="tendenciaimg/img14.jpg" alt="">
+                        <img src="{% static 'core/tendenciaimg/img14.jpg' %}" alt="">
                         <h3>Muere de coronavirus el ciclista chileno Cristopher Mansilla</h3>
                         <p> El ciclista nacional Cristopher Mansilla Almonacid, medallista panamericano entre 2008 y 2015 y
                              mundialista en Pista en 2012, falleció a los 30 años producto del coronavirus.</p>
                              <a href="https://www.meganoticias.cl/deportes/336197-muerte-cristopher-mansilla-cgx02.html" >>>Para más informacion<<</a>
                     </div>
                     <div class="servicio-ind">
-                        <img src="tendenciaimg/img15.jpg" alt="">
+                        <img src="{% static 'core/tendenciaimg/img15.jpg'%}" alt="">
                         <h3>Unión La Calera no pudo ante Vélez y queda sin opciones de avanzar ...</h3>
                         <p> El traspié en Buenos Aires deja al cuadro "cementero" en el fondo de la zona con sólo dos unidades y 
                             la espera del resultado entre Flamengo y Liga de Quito..</p>
@@ -94,20 +95,20 @@
     <div class="contenedor">
         <div class="servicio-cont">
             <div class="servicio-ind">
-                <img src="tendenciaimg/img16.jpg" alt="">
+                <img src="{% static 'core/tendenciaimg/img16.jpg'%}" alt="">
                 <h3>River sumó más casos de COVID-19 y podría no presentar 11 jugadores... </h3>
                 <p>El elenco argentino confirmó que ya son 20 los jugadores contagiados y que otros 2 futbolistas están lesionados.
                      En este marco, la dirigencia pidió a la Conmebol la inscripción de emergencia del arquero juvenil Alan Leonardo Díaz.</p>
                      <a href="https://www.chvnoticias.cl/deportes/river-mas-casos-covid-19-no-presentar-11-jugadores-libertadores_20210517/" >>>Para más informacion<<</a>
             </div>
             <div class="servicio-ind">
-                <img src="tendenciaimg/img17.jpg" alt="">
+                <img src="{% static 'core/tendenciaimg/img17.jpg'%}" alt="">
                 <h3>Acusados por muerte de Diego Maradona serán investigados por "homic...</h3>
                 <p> Las siete personas presuntamente involucradas arriesgan penas de entre 8 a 25 años de cárcel. </p>
                      <a href="https://www.t13.cl/noticia/deportest13/acusados-muerte-diego-maradona-seran-investigados-homicidio-dolo-eventual" >>>Para más informacion<<</a>
             </div>
             <div class="servicio-ind">
-                <img src="tendenciaimg/img18.jpg" alt="">
+                <img src="{% static 'core/tendenciaimg/img18.jpg'%}" alt="">
                 <h3>"Estas feminazis...": Indignación por comentario durante transmisió...</h3>
                 <p> Las palabras del comentarista se escucharon a través de un micrófono abierto en medio del partido entre Real Madrid y Eibar, por la Primera División Femenina de España.</p>
                      <a href="https://www.t13.cl/noticia/deportest13/feminazis-indignacion-comentario-transmision-partido-futbol-femenino-18-05-2021" >>>Para más informacion<<</a>
@@ -122,58 +123,58 @@
     <h2 class="titulo">Categorias</h2>
     <div class="galeria-port">
         <div class="imagen-port">
-            <img src="img/img1.jpg" alt=""></a>
+            <img src="{% static 'core/img/img1.jpg'%}" alt=""></a>
             <div class="hover-galeria">
-                <a href="Nacional.html"><img src="img/icono1.png" alt=""></a>
+                <a href="Nacional.html"><img src="{% static 'core/img/icono1.png'%}" alt=""></a>
                 <p>Nacional</p>
             </div>
         </div>
         <div class="imagen-port">
-            <img src="img/img2.jpg" alt="">
+            <img src="{% static 'core/img/img2.jpg'%}" alt="">
             <div class="hover-galeria">
-                <a href="Internacional.html"><img src="img/icono1.png" alt=""></a>
+                <a href="Internacional.html"><img src="{% static 'core/img/icono1.png'%}" alt=""></a>
                 <p>Internacional</p>
             </div>
         </div>
         <div class="imagen-port">
-            <img src="img/img3.jpg" alt="">
+            <img src="{% static 'core/img/img3.jpg'%}" alt="">
             <div class="hover-galeria">
-                <a href="tendencias.html"><img src="img/icono1.png" alt=""></a>
+                <a href="tendencias.html"><img src="{% static 'core/img/icono1.png'%}" alt=""></a>
                 <p>Tendencias</p>
             </div>
         </div>
         <div class="imagen-port">
-            <img src="img/img14.jpg" alt="">
+            <img src="{% static 'core/img/img14.jpg'%}" alt="">
             <div class="hover-galeria">
-                <a href="Formulario.html"><img src="img/icono1.png" alt=""></a>
+                <a href="Formulario.html"><img src="{% static 'core/img/icono1.png'%}" alt=""></a>
                 <p>Contactenos</p>
             </div>
         </div>
         <div class="imagen-port">
-            <img src="img/img4.jpg" alt="">
+            <img src="{% static 'core/img/img4.jpg'%}" alt="">
             <div class="hover-galeria">
-                <a href="deportes.html"><img src="img/icono1.png" alt=""></a>
+                <a href="deportes.html"><img src="{% static 'core/img/icono1.png'%}" alt=""></a>
                 <p>Deportes</p>
             </div>
         </div>
         <div class="imagen-port">
-            <img src="img/img5.jpg" alt="">
+            <img src="{% static 'core/img/img5.jpg'%}" alt="">
             <div class="hover-galeria">
-                <a href="salud.html"><img src="img/icono1.png" alt=""></a>
+                <a href="salud.html"><img src="{% static 'core/img/icono1.png'%}" alt=""></a>
                 <p>Salud</p>
             </div>
         </div>
         <div class="imagen-port">
-            <img src="img/img6.jpg" alt="">
+            <img src="{% static 'core/img/img6.jpg'%}" alt="">
             <div class="hover-galeria">
-                <a href="entrevistas.html"><img src="img/icono1.png" alt=""></a>
+                <a href="entrevistas.html"><img src="{% static 'core/img/icono1.png'%}" alt=""></a>
                 <p>Entrevistas</p>
             </div>
         </div>
         <div class="imagen-port">
-            <img src="img/img7.jpg" alt="">
+            <img src="{% static 'core/img/img7.jpg'%}" alt="">
             <div class="hover-galeria">
-                <a href="reportajes.html"><img src="img/icono1.png" alt=""></a>
+                <a href="reportajes.html"><img src="{% static 'core/img/icono1.png'%}" alt=""></a>
                 <p>Reportaje</p>
             </div>
         </div>
@@ -182,80 +183,79 @@
 </section>
     </main>
     <footer>
-        <footer>
-            <section class="clientes contenedor">
-                <h2 class="titulo">Equipo de trabajo</h2>
-                <div class="cards">
-                    <div class="card">
-                        <img src="tendenciaimg/img4" alt="">
-                        <div class="contenido-texto-card">
-                            <h4>Constanza Soto</h4>
-                            <p>Funcion: Periodista </p>
-                            <p>email: conzsto05@caosnew.cl</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="tendenciaimg/img5.jpg" alt="">
-                        <div class="contenido-texto-card">
-                            <h4>Paolo Valencia</h4>
-                            <p>Funcion: Camarografo</p>
-                            <p>email: paolvl09@caosnew.cl</p>
-                        </div>
+        <section class="clientes contenedor">
+            <h2 class="titulo">Equipo de trabajo</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="{% static 'core/tendenciaimg/img4'%}" alt="">
+                    <div class="contenido-texto-card">
+                        <h4>Constanza Soto</h4>
+                        <p>Funcion: Periodista </p>
+                        <p>email: conzsto05@caosnew.cl</p>
                     </div>
                 </div>
-            </section>
-            <section class="clientes contenedor">
-                <div class="cards">
-                    <div class="card">
-                        <img src="tendenciaimg/img3.jpg" alt="">
-                        <div class="contenido-texto-card">
-                            <h4>Francisco Santander</h4>
-                            <p>Funcion: Periodista </p>
-                            <p>email: franc02@caosnew.cl</p>
-                        </div>
+                <div class="card">
+                    <img src="{% static 'core/tendenciaimg/img5.jpg' %}" alt="">
+                    <div class="contenido-texto-card">
+                        <h4>Paolo Valencia</h4>
+                        <p>Funcion: Camarografo</p>
+                        <p>email: paolvl09@caosnew.cl</p>
                     </div>
-            </section>
-            </section>
-    
-            <div class="contenedor-footer">
-                <div class="content-foo">
-                    <h4>Noticias</h4>
-                    <a href="Nacional.html"><p>Nacional</p></a>
-                    <a href="Internacional.html"><p>Internacional</p></a>
-                    <a href="tendencias.html"><p>Tendencias</p></a>
-                    <a href="deportes.html"><p>Deportes</p></a>
-                    <a href="economia.html"><p>Economia</p></a>
-                    <a href="salud.html"><p>Salud</p></a>
                 </div>
-                <div class="content-foo">
-                    <h4>Datos util</h4>
-                    <a href="datosutil.html"><p>Estudiante</p></a>
-                    <a href="datosutil.html"><p>Pensiones</p></a>
-                    <a href="datosutil.html"><p>Bonos</p></a>
-                    <a href="datosutil.html"><p>Mujer</p></a>
-                    
+            </div>
+        </section>
+        <section class="clientes contenedor">
+            <div class="cards">
+                <div class="card">
+                    <img src="{% static 'core/tendenciaimg/img3.jpg'%}" alt="">
+                    <div class="contenido-texto-card">
+                        <h4>Francisco Santander</h4>
+                        <p>Funcion: Periodista </p>
+                        <p>email: franc02@caosnew.cl</p>
+                    </div>
                 </div>
-    
+        </section>
+        </section>
+
+        <div class="contenedor-footer">
             <div class="content-foo">
-                <h4>Programas</h4>
-                <a href="tendencias.html"><p>Noticieros</p></a>
-                <a href="reportajes.html"><p>Reportaje</p></a>
-                <a href="entrevistas.html"><p>Entrevistas</p></a>
-                
+                <h4>Noticias</h4>
+                <a href="{% url 'nacional' %}"><p>Nacional</p></a>
+                <a href="{% url 'internacional' %}"><p>Internacional</p></a>
+                <a href="{% url 'tendencias' %}"><p>Tendencias</p></a>
+                <a href="{% url 'deportes' %}"><p>Deportes</p></a>
+                <a href="#"><p>Economia</p></a>
+                <a href="{% url 'Salud' %}"><p>Salud</p></a>
+            </div>
+            <div class="content-foo">
+                <h4>Datos util</h4>
+                <a href="{% url 'datosSutil' %}"><p>Estudiante</p></a>
+                <a href="{% url 'datosSutil' %}"><p>Pensiones</p></a>
+                <a href="{% url 'datosSutil' %}"><p>Bonos</p></a>
+                <a href="{% url 'datosSutil' %}"><p>Mujer</p></a>
                 
             </div>
-                <div class="content-foo">
-                    <h4>Contactenos</h4>
-                    <p>Fono: (56) 960575948</p>
-                    <p>Email:example@example.com</p>
-                    <p>Ubicacion: Avenida Vicuña Mackenna #1370, Ñuñoa, Santiago Chile </p>
+
+        <div class="content-foo">
+            <h4>Programas</h4>
+            <a href="{% url 'internacional' %}"><p>Noticieros</p></a>
+            <a href="{% url 'Reportajes' %}"><p>Reportaje</p></a>
+            <a href="{% url 'entrevistas' %}"><p>Entrevistas</p></a>
+            
+            
+        </div>
+            <div class="content-foo">
+                <h4>Contactenos</h4>
+                <p>Fono: (56) 960575948</p>
+                <p>Email:example@example.com</p>
+                <p>Ubicacion: Avenida Vicuña Mackenna #1370, Ñuñoa, Santiago Chile </p>
+            
+    
                 
-        
-                    
-                </div>
             </div>
-            <h2 class="titulo-final">&copy; Caos News | Noticiero Nacional</h2>
-        </footer>
+        </div>
+        <h2 class="titulo-final">&copy; Caos News | Noticiero Nacional</h2>
+    </footer>
     </body>
     
     </html>

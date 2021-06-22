@@ -21,11 +21,11 @@
                 </div>
             </div>
         <nav>
-            <a href="index.html">Portada</a>
-            <a href="Nacional.html">Ultimo minuto</a>
-            <a href="deportes.html">Deporte</a>
-            <a href="reportajes.html">Programas</a>
-            <a href="login.html">iniciar sesion</a>
+            <a href="{% url 'index' %}">Portada</a>
+            <a href="{% url 'nacional' %}">Ultimo minuto</a>
+            <a href="{% url 'deportes' %}">Deporte</a>
+            <a href="{% url 'Reportajes' %}">Programas</a>
+            <a href="{% url 'login' %}">iniciar sesion</a>
         </nav>
         <section class="textos-header">
             <h1>Bienvenidos a Caos News</h1>
@@ -33,16 +33,16 @@
             
             <div class="content-all">
                 <div class="content-carrousel">
-                    <figure><a href="Nacional.html"><img src="img/img1.jpg"></figure></a>
-                    <figure><a href="Internacional.html"><img src="img/img2.jpg"></figure></a>
-                    <figure><a href="tendencias.html"><img src="img/img3.jpg"></figure></a>
-                    <figure><a href="economia.html"><img src="img/img4.jpg"></figure></a>
-                    <figure><a href="deportes.html"><img src="img/img5.jpg"></figure></a>
-                    <figure><a href="entrevistas.html"><img src="img/img6.jpg"></figure></a>
-                    <figure><a href="reportajes.html"><img src="img/img7.jpg"></figure></a>
-                    <figure><a href="Nacional.html"><img src="img/img8.jpg"></figure></a>
-                    <figure><a href="salud.html"><img src="img/img10.jpg"></figure></a>
-                    <figure><a href="Internacional.html"><img src="img/img12.jpg"></figure></a>
+                    <figure><a href="{% url 'nacional' %}"><img src="{% static 'core/img/img1.jpg'%}"></figure></a>
+                    <figure><a href="{% url 'internacional' %}"><img src="{% static 'core/img/img2.jpg'%}"></figure></a>
+                    <figure><a href="{% url 'tendencias' %}"><img src="{% static 'core/img/img3.jpg'%}"></figure></a>
+                    <figure><a href="#"><img src="{% static 'core/img/img4.jpg'%}"></figure></a>
+                    <figure><a href="{% url 'deportes'%}"><img src="{% static 'core/img/img5.jpg'%}"></figure></a>
+                    <figure><a href="{% url 'entrevistas'%}"><img src="{% static 'core/img/img6.jpg'%}"></figure></a>
+                    <figure><a href="{% url 'Reportajes'%}"><img src="{% static 'core/img/img7.jpg'%}"></figure></a>
+                    <figure><a href="{% url 'nacional'%}"><img src="{% static 'core/img/img8.jpg'%}"></figure></a>
+                    <figure><a href="{% url 'Salud'%}"><img src="{% static 'core/img/img10.jpg'%}"></figure></a>
+                    <figure><a href="{% url 'internacional'%}"><img src="{% static 'core/img/img12.jpg'%}"></figure></a>
                 </div>
             </div>    
            
@@ -58,7 +58,7 @@
         <section class="contenedor sobre-nosotros">
             <h2 class="titulo">Ultimo minuto</h2>
             <div class="contenedor-sobre-nosotros">
-                <video autoplay controls src="video/video1.mp4#t=15"></video>
+                <video autoplay controls src="{% static 'core/video/video1.mp4#t=15'%}"></video>
                 <div class="contenido-textos">
                     <h3><span>1</span>Quiosqueros de Puerto Montt agredieron a supuesto ladrón</h3>
                     <p>Un grupo de quiosqueros de Puerto Montt está cansado de la ola de robos que están sufriendo hace más de un mes.
@@ -75,19 +75,19 @@
                 <div class="servicio-cont">
                     <div class="servicio-cont">
                         <div class="servicio-ind">
-                            <img src="tendenciaimg/img13.jpg" alt="">
+                            <img src="{% static 'core/tendenciaimg/img13.jpg'%}" alt="">
                             <h3>Calendario Copa América Argentina - Colombia 2021</h3>
-                                <a href="deportes.html" >>>Para más informacion <<</a>
+                                <a href="{% url 'deportes' %}" >>>Para más informacion <<</a>
                     </div>
                     <div class="servicio-ind">
-                        <video autoplay controls src="video/video5.mp4" style="width: 300px;"></video>
+                        <video autoplay controls src="{% static 'core/video/video5.mp4'%}" style="width: 300px;"></video>
                         <h3>Paloma Mami y su gran exitó</h3>                        
-                        <a href="entrevistas.html" >>>Para más informacion <<</a>
+                        <a href="{% url 'entrevistas' %}" >>>Para más informacion <<</a>
                     </div>
                     <div class="servicio-ind">
-                        <img src="internacional/img1.jpg" alt="">
+                        <img src="{% static 'core/internacional/img1.jpg'%}" alt="">
                         <h3>Joven secuestra a niño de 4 años mientras dormía en su cuna, lo asesina y lo deja en la calle</h3>
-                        <a href="Internacional.html" >>>Para más informacion <<</a>                        
+                        <a href="{% url 'internacional' %}" >>>Para más informacion <<</a>                        
                     </div>
                 </div>
             </div>
@@ -96,19 +96,19 @@
                     <div class="servicio-cont">
                         <div class="servicio-cont">
                             <div class="servicio-ind">
-                                <img src="img/img1.jpg"alt="">
+                                <img src="{% static 'core/img/img1.jpg'%}"alt="">
                                 <h3>Temblor de mediana intensidad se registra en la Antártica</h3>
-                                    <a href="Nacional.html" >>>Para más informacion <<</a>
+                                    <a href="{% url 'nacional' %}" >>>Para más informacion <<</a>
                         </div>
                         <div class="servicio-ind">
-                            <video autoplay controls src="video/video2.mp4" style="width: 300px;"></video>
+                            <video autoplay controls src="{% static 'core/video/video2.mp4'%}" style="width: 300px;"></video>
                             <h3>Quiosqueros de Puerto Montt agredieron a supuesto ladrón</h3>
-                            <a href="reportajes.html" >>>Para más informacion <<</a>
+                            <a href="{% url 'Reportajes' %}" >>>Para más informacion <<</a>
                         </div>
                         <div class="servicio-ind">
-                            <img src="img3/img2.jpg" alt="">
+                            <img src="{% static 'core/img3/img2.jpg'%}" alt="">
                             <h3>Volverán las discos y clubes con “carnet COVID”, pero en Suiza</h3>
-                            <a href="salud.html" >>>Para más informacion <<</a>
+                            <a href="{% url 'Salud' %}" >>>Para más informacion <<</a>
                         </div>
 
                     </div>
@@ -119,17 +119,17 @@
                 <h2 class="titulo">Coronavirus</h2>
                 <div class="servicio-cont">
                     <div class="servicio-ind">
-                        <img src="img/img10.jpg" alt="">
+                        <img src="{% static 'core/img/img10.jpg'%}" alt="">
                         <h3>COVID-19: </h3>
                         <p>Este es el calendario de vacunación para la semana del 19 de abril</p>
                     </div>
                     <div class="servicio-ind">
-                        <img src="img/img11.jpg" alt="">
+                        <img src="{% static 'core/img/img11.jpg'%}" alt="">
                         <h3>Plan Paso a Paso:</h3>
                         <p> ¿En qué fase estará cada comuna de Chile a partir del lunes 19 de abril?</p>
                     </div>
                     <div class="servicio-ind">
-                        <img src="img/img12.jpg" alt="">
+                        <img src="{% static 'core/img/img12.jpg'%}" alt="">
                         <h3>Internacional:</h3>
                         <p>Variante india del COVID-19 de doble mutación llegó hasta el Reino Unido</p>
                     </div>
@@ -142,58 +142,58 @@
         <h2 class="titulo">Categorias</h2>
         <div class="galeria-port">
             <div class="imagen-port">
-                <img src="img/img1.jpg" alt=""></a>
+                <img src="{% static 'core/img/img1.jpg'%}" alt=""></a>
                 <div class="hover-galeria">
-                    <a href="Nacional.html"><img src="img/icono1.png" alt=""></a>
+                    <a href="{% url 'nacional' %}"><img src="{% static 'core/img/icono1.png'%}" alt=""></a>
                     <p>Nacional</p>
                 </div>
             </div>
             <div class="imagen-port">
-                <img src="img/img2.jpg" alt="">
+                <img src="{% static 'core/img/img2.jpg'%}" alt="">
                 <div class="hover-galeria">
-                    <a href="Internacional.html"><img src="img/icono1.png" alt=""></a>
+                    <a href="{% url 'internacional' %}"><img src="{% static 'core/img/icono1.png'%}" alt=""></a>
                     <p>Internacional</p>
                 </div>
             </div>
             <div class="imagen-port">
-                <img src="img/img3.jpg" alt="">
+                <img src="{% static 'core/img/img3.jpg'%}" alt="">
                 <div class="hover-galeria">
-                    <a href="tendencias.html"><img src="img/icono1.png" alt=""></a>
+                    <a href="{% url 'tendencias' %}"><img src="{% static 'core/img/icono1.png'%}" alt=""></a>
                     <p>Tendencias</p>
                 </div>
             </div>
             <div class="imagen-port">
-                <img src="img/img14.jpg" alt="">
+                <img src="{% static 'core/img/img14.jpg'%}" alt="">
                 <div class="hover-galeria">
-                    <a href="Formulario.html"><img src="img/icono1.png" alt=""></a>
+                    <a href="{% url 'formulario' %}"><img src="{% static 'core/img/icono1.png'%}" alt=""></a>
                     <p>Contactenos</p>
                 </div>
             </div>
             <div class="imagen-port">
-                <img src="img/img4.jpg" alt="">
+                <img src="{% static 'core/img/img4.jpg'%}" alt="">
                 <div class="hover-galeria">
-                    <a href="deportes.html"><img src="img/icono1.png" alt=""></a>
+                    <a href="{% url 'deportes' %}"><img src="{% static 'core/img/icono1.png'%}" alt=""></a>
                     <p>Deportes</p>
                 </div>
             </div>
             <div class="imagen-port">
-                <img src="img/img5.jpg" alt="">
+                <img src="{% static 'core/img/img5.jpg'%}" alt="">
                 <div class="hover-galeria">
-                    <a href="salud.html"><img src="img/icono1.png" alt=""></a>
+                    <a href="{% url 'Salud' %}"><img src="{% static 'core/img/icono1.png'%}" alt=""></a>
                     <p>Salud</p>
                 </div>
             </div>
             <div class="imagen-port">
-                <img src="img/img6.jpg" alt="">
+                <img src="{% static 'core/img/img6.jpg'%}" alt="">
                 <div class="hover-galeria">
-                    <a href="entrevistas.html"><img src="img/icono1.png" alt=""></a>
+                    <a href="{% url 'entrevistas' %}"><img src="{% static 'core/img/icono1.png'%}" alt=""></a>
                     <p>Entrevistas</p>
                 </div>
             </div>
             <div class="imagen-port">
-                <img src="img/img7.jpg" alt="">
+                <img src="{% static 'core/img/img7.jpg'%}" alt="">
                 <div class="hover-galeria">
-                    <a href="reportajes.html"><img src="img/icono1.png" alt=""></a>
+                    <a href="{% url 'Reportajes' %}"><img src="{% static 'core/img/icono1.png'%}" alt=""></a>
                     <p>Reportaje</p>
                 </div>
             </div>
@@ -238,27 +238,27 @@
         <div class="contenedor-footer">
             <div class="content-foo">
                 <h4>Noticias</h4>
-                <a href="Nacional.html"><p>Nacional</p></a>
-                <a href="Internacional.html"><p>Internacional</p></a>
-                <a href="tendencias.html"><p>Tendencias</p></a>
-                <a href="deportes.html"><p>Deportes</p></a>
-                <a href="economia.html"><p>Economia</p></a>
-                <a href="salud.html"><p>Salud</p></a>
+                <a href="{% url 'nacional' %}"><p>Nacional</p></a>
+                <a href="{% url 'internacional' %}"><p>Internacional</p></a>
+                <a href="{% url 'tendencias' %}"><p>Tendencias</p></a>
+                <a href="{% url 'deportes' %}"><p>Deportes</p></a>
+                <a href="#"><p>Economia</p></a>
+                <a href="{% url 'Salud' %}"><p>Salud</p></a>
             </div>
             <div class="content-foo">
                 <h4>Datos util</h4>
-                <a href="datosutil.html"><p>Estudiante</p></a>
-                <a href="datosutil.html"><p>Pensiones</p></a>
-                <a href="datosutil.html"><p>Bonos</p></a>
-                <a href="datosutil.html"><p>Mujer</p></a>
+                <a href="{% url 'datosSutil' %}"><p>Estudiante</p></a>
+                <a href="{% url 'datosSutil' %}"><p>Pensiones</p></a>
+                <a href="{% url 'datosSutil' %}"><p>Bonos</p></a>
+                <a href="{% url 'datosSutil' %}"><p>Mujer</p></a>
                 
             </div>
 
         <div class="content-foo">
             <h4>Programas</h4>
-            <a href="tendencias.html"><p>Noticieros</p></a>
-            <a href="reportajes.html"><p>Reportaje</p></a>
-            <a href="entrevistas.html"><p>Entrevistas</p></a>
+            <a href="{% url 'internacional' %}"><p>Noticieros</p></a>
+            <a href="{% url 'Reportajes' %}"><p>Reportaje</p></a>
+            <a href="{% url 'entrevistas' %}"><p>Entrevistas</p></a>
             
             
         </div>

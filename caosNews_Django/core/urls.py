@@ -11,7 +11,8 @@ urlpatterns = [
     path('nacional/', nacional, name="nacional"),
     path('registro/', registro, name="registro"),
     path('datosutil/', datoSutil, name="datosSutil"),
-    path('repoetajes/', reportajes, name="Reportajes"),
+    path('reportajes/', reportajes, name="Reportajes"),
     path('salud/', salud, name="Salud"),
     path('tendencias/', tendencias, name="tendencias"),
+    path('entrevistas/', entrevistas, name="entrevistas")
 ]
