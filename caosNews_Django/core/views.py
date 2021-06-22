@@ -21,3 +21,15 @@ def nacional(request):
 
 def registro(request):
     return render(request, 'core/Registro.html')
+
+def datoSutil(request):
+    return render(request, 'core/datosutil.html')
+
+def reportajes(request):
+    return render(request, 'core/reportajes.html')
+
+def salud(request):
+    return render(request, 'core/salud.html')
+
+def tendencias(request):
+    return render(request, 'core/tendencias.html')
