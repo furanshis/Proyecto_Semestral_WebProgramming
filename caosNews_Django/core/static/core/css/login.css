@@ -2,10 +2,81 @@
 fieldset{
     border: none;
 }
+
 #cabecera{
     height: 450px;
     background: hsla(340, 95%, 50%, 0.459)
 }
+
+
+@media screen and (max-width:500px){
+    #p-2{
+        text-align: center;
+     
+    }
+    #registro{
+        text-align: center;
+    }
+    #form-login{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:500px){
+    
+    #p-2{
+        text-align: center;
+     
+    }
+    #registro{
+        text-align: center;
+    }
+    #form-login{
+        text-align: center;
+    }
+}
+
+#form-login{
+
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+    /*background-color: rgba(0, 0, 0, 0.1);*/
+    
+}
+
+
+#password{
+    width: 350px;
+}
+#user{
+    width: 350px;
+}
+
+#boton{
+    margin-top: 1px;
+    margin-bottom: 20px;
+    width: 350px;
+    height: 50px;
+    background-color: #840032;
+    border:none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+   
+    
+}
+
+#boton:hover{
+    background-color: rgb(0, 0, 0);
+    
+}
+
+
+
+
+
 
 .p-form{
     position: absolute;
@@ -24,7 +95,7 @@ fieldset{
 
 .titulo-login{
     font-size: 2rem;
-    margin-left: 400px;
+    
 }
 
 .datos{
@@ -36,7 +107,7 @@ fieldset{
     background-position-y: 5px;
     border: 1px solid #dfdfdf;
     border-radius: 2px;
-    margin-right: 2rem;
+    
     padding: 1rem;
     padding-right: 2rem;
     width: 400px;
@@ -45,45 +116,23 @@ fieldset{
     
 }
 
-#login{
-    margin-left: 200px;
-    top: 50%;
-    left: 50%;
-    margin-bottom: 20px;
-    margin-top: 50px;
-}
+
 label{
    display: block;
 }
 .div-datos{
     position: relative;
     margin-top: 20px;
-    margin-left: 320px;
+    
     margin-bottom: 30px;
-    margin-right: 20px;
+    
     
 }
 
-#boton{
-    margin-top: 1px;
-    margin-left: 520px;
-    margin-bottom: 20px;
-    width: 400px;
-    height: 50px;
-    background-color: #840032;
-    border:none;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-}
 
-#boton:hover{
-    background-color: rgb(0, 0, 0);
-    
-}
 
 #p-2{
-    margin-left: 520px;
+    
 }
 .a-p{
     text-decoration: none;
@@ -91,16 +140,16 @@ label{
 }
 
 hr{
-    width: 500px;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
     margin-top: 40px;
     margin-bottom: 20px;
-    margin-left: 460px;
     opacity: 20%;
     
 }
 
 #titulo-no{
-    margin-left: 520px;
     font-size: 1.4rem;
     
 
@@ -108,7 +157,6 @@ hr{
 
 #boton-registro{
     margin-top: 10px;
-    margin-left: 520px;
     margin-bottom: 20px;
     width: 400px;
     height: 50px;
