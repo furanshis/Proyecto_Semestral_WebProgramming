@@ -20,7 +20,7 @@ def nacional(request):
     return render(request, 'core/Nacional.html')
 
 def registro(request):
-    return render(request, 'core/Registro.html')
+    return render(request, 'core/registro2.html')
 
 def datoSutil(request):
     return render(request, 'core/datosutil.html')
