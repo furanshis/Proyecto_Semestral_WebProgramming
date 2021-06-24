@@ -13,8 +13,7 @@ class Usuario(models.Model):
 
 
 class Periodista(models.Model):
-    idPeriodista = models.IntegerField(primary_key=True, verbose_name="id de periodista")
-    runPeriodista = models.CharField(max_length=10, verbose_name="run de periodista")
+    runPeriodista = models.CharField(primary_key=True ,max_length=10, verbose_name="run de periodista")
     nombrePeriodista = models.CharField(max_length=30, verbose_name="nombre de periodista")
     apellidoPeriodista = models.CharField(max_length=30, verbose_name="apellido de periodista")
     sueldo = models.IntegerField(verbose_name="sueldo de periodista")
@@ -37,6 +36,7 @@ class Noticia(models.Model):
     epigrafe = models.CharField(max_length=100, verbose_name="epígrafe de la noticia")
     cuerpo = models.CharField(max_length=500, verbose_name="Cuerpo de la noticia")
     fotoNoticia = models.BinaryField(null=True)
+    periodista = models.ForeignKey(Periodista, on_delete=models.CASCADE)
     categoria = models.ForeignKey(categoriaNoticia, on_delete=models.CASCADE)
 
     def __str__(self):

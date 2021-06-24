@@ -55,9 +55,9 @@
     </header>
 
     <table>
-    <tr><td>Categoria</td><td>titular</td></tr>
+    <tr><td>Categoria</td><td>titular</td><td>run Periodista</td></tr>
     {% for noticia in noticias %}
-    <tr><td>{{noticia.categoria}}</td><td>{{noticia.tituloNoticia}}</td></tr>
+    <tr><td>{{noticia.categoria}}</td><td>{{noticia.tituloNoticia}}</td><td> {{noticia.periodista}} </td></tr>
     {% endfor %}
     </table>
 
