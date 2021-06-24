@@ -11,6 +11,19 @@ class Usuario(models.Model):
     def __str__(self):
         return self.nombreUsuario
 
+
+class Periodista(models.Model):
+    idPeriodista = models.IntegerField(primary_key=True, verbose_name="id de periodista")
+    runPeriodista = models.CharField(max_length=10, verbose_name="run de periodista")
+    nombrePeriodista = models.CharField(max_length=30, verbose_name="nombre de periodista")
+    apellidoPeriodista = models.CharField(max_length=30, verbose_name="apellido de periodista")
+    sueldo = models.IntegerField(verbose_name="sueldo de periodista")
+    fechaContrato = models.DateField()
+    fechaNacimientoPeriodista = models.DateField()
+
+    def __str__(self):
+        return self.nombrePeriodista    
+
 class categoriaNoticia(models.Model):
     idCategoria = models.IntegerField(primary_key=True, verbose_name="Id de la categoría de la notica")
     nombreCategoria = models.CharField(max_length=25, verbose_name="nombre de la categoría")

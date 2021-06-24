@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Noticia
 
 # Create your views here.
 def index(request):
@@ -36,3 +37,15 @@ def tendencias(request):
 
 def entrevistas(request):
     return render(request, 'core/entrevistas.html')
+
+
+def listarNoticias(request):
+
+    noticias = Noticia.object.all()
+
+    datos = {
+        'datos': noticias
+    }
+
+
+    return render(request, 'core/listarNoticias.html', datos)

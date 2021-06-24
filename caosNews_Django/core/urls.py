@@ -14,5 +14,6 @@ urlpatterns = [
     path('reportajes/', reportajes, name="Reportajes"),
     path('salud/', salud, name="Salud"),
     path('tendencias/', tendencias, name="tendencias"),
-    path('entrevistas/', entrevistas, name="entrevistas")
+    path('entrevistas/', entrevistas, name="entrevistas"),
+    path('listarNoticias/', listarNoticias, name="listarNoticias")
 ]

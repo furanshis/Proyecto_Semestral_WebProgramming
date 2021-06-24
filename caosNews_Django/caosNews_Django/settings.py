@@ -78,9 +78,9 @@ WSGI_APPLICATION = 'caosNews_Django.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.oracle',
-        'NAME': '127.0.0.1/xepdb1',
+        'NAME': '127.0.0.1:1521/xepdb1',
         'USER': 'django_user',
-        'PASSWORD': 'django',
+        'PASSWORD': 'Django',
         'TEST': {
             'USER': 'default_test',
             'TBLSPACE': 'default_test_tbls',
