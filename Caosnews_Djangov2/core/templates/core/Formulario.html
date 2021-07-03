@@ -1,35 +1,57 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Contacto</title>
-    <link rel="shortcut icon" href="img/imgcn.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/formulario.css">
-    
-
-    <script src="js/Copia de jquery-3.6.0.js"></script>
-
-    <script src="js/form.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Página web Caos_News</title>
+    <link rel="shortcut icon" href="{% static 'core/img/imgcn.png'%}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'core/css/estilos.css'%}">
+    <link rel="stylesheet" href="{% static 'core/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
 </head>
+
 <body>
-    <header id="cabecera">
+    <header>
         <nav>
-            <a href="index.html">Portada</a>
-            <a href="Nacional.html">Ultimo minuto</a>
-            <a href="deportes.html">Deporte</a>
-            <a href="reportajes.html">Programas</a>
-            <a href="login.html">iniciar sesion</a>
+            <div class="cont">
+                <div class="logo">
+                    <img src="{% static 'core/tendenciaimg/logo.png'%}" alt=""style="width:149px">
+                </div>
+            </div>
+        <nav>
+            <a href="{% url 'index' %}">Portada</a>
+            <a href="{% url 'nacional' %}">Ultimo minuto</a>
+            <a href="{% url 'deportes' %}">Deporte</a>
+            <a href="{% url 'Reportajes' %}">Programas</a>
+            <a href="{% url 'login' %}">iniciar sesion</a>
         </nav>
         <section class="textos-header">
-            <h1 id="titulo">Contacto</h1>
-               
+            <h1>Bienvenidos a Caos News</h1>
+           
+            
+            <div class="content-all">
+                <div class="content-carrousel">
+                    <figure><a href="{% url 'nacional' %}"><img src="{% static 'core/img/img1.jpg'%}"></figure></a>
+                    <figure><a href="{% url 'internacional' %}"><img src="{% static 'core/img/img2.jpg'%}"></figure></a>
+                    <figure><a href="{% url 'tendencias' %}"><img src="{% static 'core/img/img3.jpg'%}"></figure></a>
+                    <figure><a href="#"><img src="{% static 'core/img/img4.jpg'%}"></figure></a>
+                    <figure><a href="{% url 'deportes'%}"><img src="{% static 'core/img/img5.jpg'%}"></figure></a>
+                    <figure><a href="{% url 'entrevistas'%}"><img src="{% static 'core/img/img6.jpg'%}"></figure></a>
+                    <figure><a href="{% url 'Reportajes'%}"><img src="{% static 'core/img/img7.jpg'%}"></figure></a>
+                    <figure><a href="{% url 'nacional'%}"><img src="{% static 'core/img/img8.jpg'%}"></figure></a>
+                    <figure><a href="{% url 'Salud'%}"><img src="{% static 'core/img/img10.jpg'%}"></figure></a>
+                    <figure><a href="{% url 'internacional'%}"><img src="{% static 'core/img/img12.jpg'%}"></figure></a>
+                </div>
+            </div>    
            
         </section>
         <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
-                style="height: 100%; width: 500%;">
-                
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
             </svg></div>
     </header>
    <main>
@@ -128,31 +150,65 @@
    </main>
 
 
-   <footer id="pie">
+   <footer>
+    <section class="clientes contenedor">
+        <h2 class="titulo">Equipo de trabajo</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="{% static 'core/tendenciaimg/img4'%}" alt="">
+                <div class="contenido-texto-card">
+                    <h4>Constanza Soto</h4>
+                    <p>Funcion: Periodista </p>
+                    <p>email: conzsto05@caosnew.cl</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="{% static 'core/tendenciaimg/img5.jpg' %}" alt="">
+                <div class="contenido-texto-card">
+                    <h4>Paolo Valencia</h4>
+                    <p>Funcion: Camarografo</p>
+                    <p>email: paolvl09@caosnew.cl</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="clientes contenedor">
+        <div class="cards">
+            <div class="card">
+                <img src="{% static 'core/tendenciaimg/img3.jpg'%}" alt="">
+                <div class="contenido-texto-card">
+                    <h4>Francisco Santander</h4>
+                    <p>Funcion: Periodista </p>
+                    <p>email: franc02@caosnew.cl</p>
+                </div>
+            </div>
+    </section>
+    </section>
+
     <div class="contenedor-footer">
         <div class="content-foo">
             <h4>Noticias</h4>
-            <p>Nacional</p>
-            <p>Internacional</p>
-            <p>Tendencias</p>
-            <p>Deportes</p>
-            <p>Economia</p>
-            <p>Salud</p>
+            <a href="{% url 'nacional' %}"><p>Nacional</p></a>
+            <a href="{% url 'internacional' %}"><p>Internacional</p></a>
+            <a href="{% url 'tendencias' %}"><p>Tendencias</p></a>
+            <a href="{% url 'deportes' %}"><p>Deportes</p></a>
+            <a href="#"><p>Economia</p></a>
+            <a href="{% url 'Salud' %}"><p>Salud</p></a>
         </div>
         <div class="content-foo">
             <h4>Datos util</h4>
-            <p>Estudiante</p>
-            <p>Pensiones</p>
-            <p>Bonos</p>
-            <p>Mujer</p>
+            <a href="{% url 'datosSutil' %}"><p>Estudiante</p></a>
+            <a href="{% url 'datosSutil' %}"><p>Pensiones</p></a>
+            <a href="{% url 'datosSutil' %}"><p>Bonos</p></a>
+            <a href="{% url 'datosSutil' %}"><p>Mujer</p></a>
             
         </div>
 
     <div class="content-foo">
         <h4>Programas</h4>
-        <p>Noticieros</p>
-        <p>Reportaje</p>
-        <p>Entrevistas</p>
+        <a href="{% url 'internacional' %}"><p>Noticieros</p></a>
+        <a href="{% url 'Reportajes' %}"><p>Reportaje</p></a>
+        <a href="{% url 'entrevistas' %}"><p>Entrevistas</p></a>
         
         
     </div>
@@ -163,7 +219,7 @@
             <p>Ubicacion: Avenida Vicuña Mackenna #1370, Ñuñoa, Santiago Chile </p>
         
 
-
+            
         </div>
     </div>
     <h2 class="titulo-final">&copy; Caos News | Noticiero Nacional</h2>
